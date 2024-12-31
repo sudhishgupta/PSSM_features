@@ -54,8 +54,8 @@ def run_PSIBLAST(input_file, out_dir):
 
 def main():
     # Input FASTA file and output directory for PSSM profiles
-    input_file = 'test2.txt'
-    out_dir = 'output_pssm/new/'
+    input_file = ''         #enter the input file directory
+    out_dir = ''   #enter the output directory
 
     run_PSIBLAST(input_file, out_dir)
 
