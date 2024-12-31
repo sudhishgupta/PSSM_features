@@ -127,8 +127,8 @@ def bigram_pssm(pssm_dir):
 
 def main():
     # Input FASTA file and output directory for PSSM profiles
-    input_file = 'test_fasta.txt'
-    out_dir = 'output_BiGpssm/'
+    input_file = ''  #enter the input filename
+    out_dir = ''     #enter thr output directory
 
     # Check if input file exists
     if not os.path.isfile(input_file):
