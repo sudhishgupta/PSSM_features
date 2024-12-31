@@ -11,6 +11,13 @@ The RUNBLAST.py code helps you to generate PSSM matrices for a protein, given it
 You can specify which database to run the PSI-BLAST depending upon your locally installed database, by modifying the 'db_prefix' variable.
 
 ## Bi-Gram PSSM
+Generates PSSM scores for bigrams i.e amino acids at 'i' and 'i+1' position in the inputted protein sequence
+Saves the result in a *.csv file
 
+## Psuedo PSSM (PsePSSM)
+Generates a 20 + 20 x lambda feature values for an input pssm matrix. The first 20 values are normalised Amino Acid Composition derived from PSSM matrices, and the next 20 x lambda feature values are PsePSSM feature values calculated using the input pssm matrix and the input lag parammeter (lambda)
+
+## PSSM Standard Features (PSSM_Completepipe)
+This code written in R utilises a R package namely PSSMCOOL and generates various PSSM based features at a single go and saves all the results in a *.csv file with appropriate headers. This piepline enhances the current functionality of the PSSMCOOL package, imporves the readability of the result and can be used for high throughput result generation.
 
 
