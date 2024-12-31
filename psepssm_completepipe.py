@@ -149,9 +149,9 @@ def psepssm_calc(pssm_dir, num_lags):
 
 def main():
     # Input FASTA file and output directory for PSSM profiles
-    input_file = 'test_fasta.txt'
-    out_dir = 'output_psepssm/'
-    num_lags = 3
+    input_file = ''    #enter the input file path
+    out_dir = ''       #enter thr output directory file path
+    num_lags = 3       #enter lag parameter lambda
 
     # Check if input file exists
     if not os.path.isfile(input_file):
